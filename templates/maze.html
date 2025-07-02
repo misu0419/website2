@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Төөрдөг байшин</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Төөрдөг байшин</h1>
+    <p>Зүүн эсвэл Баруун аль замыг сонгох вэ?</p>
+    <form method="post">
+        <button type="submit" name="choice" value="зүүн">Зүүн</button>
+        <button type="submit" name="choice" value="баруун">Баруун</button>
+    </form>
+    <p>{{ message }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

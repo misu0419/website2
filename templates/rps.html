@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Хайч, Чулуу, Даавуу</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Хайч, Чулуу, Даавуу</h1>
+    <form method="post">
+        <button type="submit" name="choice" value="Чулуу">Чулуу</button>
+        <button type="submit" name="choice" value="Даавуу">Даавуу</button>
+        <button type="submit" name="choice" value="Хайч">Хайч</button>
+    </form>
+    <p>{{ result }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

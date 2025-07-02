@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Фибоначчигийн таавар</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Фибоначчигийн тоонууд</h1>
+    <p>Та хэдэн гишүүн хүсэж байна вэ?</p>
+    <form method="post">
+        <input type="number" name="number" min="1" required>
+        <button type="submit">Үүсгэх</button>
+    </form>
+    <p>{{ result }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

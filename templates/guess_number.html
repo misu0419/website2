@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Санасан тоог таах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Санасан тоог таах</h1>
+    <p>1-10 хүртэл тоо таагаарай:</p>
+    <form method="post">
+        <input type="number" name="guess" min="1" max="10" required>
+        <button type="submit">Таах</button>
+    </form>
+    <p>{{ message }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Зураг таах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Зураг таах тоглоом</h1>
+    <p>Асууя: "Энэ амьтан юу вэ? 🐶"</p>
+    <form method="post">
+        <input type="text" name="answer" placeholder="Хариултаа оруулна уу" required>
+        <button type="submit">Илгээх</button>
+    </form>
+    <p>{{ message }}</p>
+    <a href="/">Буцах</a>
+</body>
+</html>
